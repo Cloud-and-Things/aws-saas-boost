@@ -89,7 +89,7 @@ fi
 
 cd ${CURRENT_DIR}/installer
 echo "Building installer..."
-mvn --quiet -Dspotbugs.skip > /dev/null 2>&1
+mvn --quiet -Dspotbugs.skip
 if [ $? -ne 0 ]; then
 	echo "Error building installer for SaaS Boost."
 	exit 2
